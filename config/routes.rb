@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :rooms
   devise_for :users
 
-  root controller: :room, action: :index
+  root controller: :rooms, action: :index
 
   resource :room_messages
   resource :rooms
